@@ -16,7 +16,7 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>enuviadenu-sps-summer21</googleCloudProjectId>
+    <googleCloudProjectId>summer21-sps-6</googleCloudProjectId>
   </properties>
 
   <dependencies>
