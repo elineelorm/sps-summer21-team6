@@ -1,0 +1,214 @@
+/*Global Styles
+------------------------------*/
+body {
+    font-family: 'Open Sans Condensed Light',sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    /*font-family: ; */
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    margin: 0;
+}
+
+h4{
+    font-size:22px;
+}
+
+h2, p {
+    margin: 0px;
+}
+
+p{
+    font-size: 22px;
+}
+ul{
+    font-size: 22px;
+}
+
+.content-wrap {
+    max-width: 1300px;
+    min-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: auto;
+    border: 0px; 
+}
+
+.column-narrow{
+    width: 35%;
+    float: left;
+/*    padding-top: px;*/
+/*    border: 1px solid black; */
+    
+}
+
+.column-wide{
+    width: 60%;
+    float: left;
+    padding-left: 5%;
+/*    min-height: 160px;*/
+/*    border: 1px solid black; */
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.button{
+    text-decoration: none;
+    background-color: red;
+    color: floralwhite;
+    padding: 10px;
+    display:inline-block;
+}
+
+#map {
+  border: thin solid black;
+  height: 500px;
+  width: 500px;
+}
+/* Header and Footer
+-------------------------------------*/
+
+header{
+    background: #CF5C36;
+    color: #EEE5E9;
+    padding-top: 20px;
+    position: relative;
+}
+
+footer{
+    background: #0B3954;
+    color: #EEE5E9;
+    text-align: center;
+}
+
+header h1{
+    font-weight: 700;
+    color: #0B3954;
+}
+header h2{
+    font-weight: 500;
+    color:#0B3954;
+}
+
+footer h2 {
+    margin: 20px;
+}
+footer p{
+    margin: 15px;
+}
+
+footer a:link{
+    color: #EEE5E9;
+}
+
+footer a:hover{
+    color: #CF5C36;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #CF5C36;
+}
+
+footer h4{
+    font-weight: 200;
+}
+
+.profile-img { 
+    border-radius: 300px;    
+/*    float: left;*/
+/*    margin-right: 40px;*/
+    
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.contact-info a {
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Navigation
+-------------------------------------*/
+
+
+nav {
+    text-align: right;
+    background: #CF5C36;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    
+}
+
+nav a:link{
+    color: #EEE5E9;
+}
+
+nav a:hover {
+    color: #0B3954;
+    font-size: 24px;
+}
+
+/*Body
+--------------------------*/
+
+/* Work
+--------------------------*/
+.work {
+    background: #EEE5E8;
+}
+
+h3 ~ p {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.job-descrption p:first-of-type{
+    margin-top: 0;
+}
+
+/*Education
+--------------------------*/
+
+.education {
+    background: linear-gradient(rgba(103, 113, 176, 0.8), rgba(125, 132, 178, 0.6)),
+                url(universidad-en-guadalajara.jpg) no-repeat fixed;
+    background-size: cover;
+    color: #EEE5E9;
+}
+
+.education p:nth-child(4) {
+    margin-bottom: 0px;
+}
