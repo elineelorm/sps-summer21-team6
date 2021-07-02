@@ -6,13 +6,13 @@ body {
 }
 
 h1, h2 {
-    /*font-family: ; */
     font-weight: 200;
 }
 
 h1 {
     font-size: 60px;
     margin-bottom: 35px;
+    color: #BEE9E8;
 }
 
 h2 {
@@ -41,26 +41,26 @@ ul{
 }
 
 .content-wrap {
-    max-width: 1300px;
+    max-width: 1530px;
     min-width: 950px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 150px;
     overflow: auto;
     border: 0px; 
 }
 
-.column-narrow{
-    width: 35%;
+.column-left{
+    width: 50%;
     float: left;
 /*    padding-top: px;*/
 /*    border: 1px solid black; */
     
 }
 
-.column-wide{
-    width: 60%;
-    float: left;
-    padding-left: 5%;
+.column-right{
+    width: 50%;
+    float: right;
+    padding-left: 0%;
 /*    min-height: 160px;*/
 /*    border: 1px solid black; */
 }
@@ -71,40 +71,41 @@ ul{
 
 .button{
     text-decoration: none;
-    background-color: red;
-    color: floralwhite;
+/*    background-color: red;
+    color: floralwhite; */
     padding: 10px;
     display:inline-block;
 }
 
-#map {
-  border: thin solid black;
-  height: 500px;
-  width: 500px;
-}
 /* Header and Footer
 -------------------------------------*/
 
 header{
-    background: #CF5C36;
+    background: #62B6CB;
     color: #EEE5E9;
     padding-top: 20px;
     position: relative;
 }
 
 footer{
-    background: #0B3954;
+    background: #1B4965;
     color: #EEE5E9;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 header h1{
     font-weight: 700;
-    color: #0B3954;
+   /* color: #0B3954;*/
 }
 header h2{
     font-weight: 500;
-    color:#0B3954;
+  /*  color:#0B3954;*/
+}
+
+header p{
+    font-size: 24px;
 }
 
 footer h2 {
@@ -154,8 +155,8 @@ footer h4{
 
 
 nav {
-    text-align: right;
-    background: #CF5C36;
+    text-align: center;
+    background: #62B6CB;
     position: fixed;
     width: 100%;
     top: 0;
@@ -177,17 +178,22 @@ nav a:link{
 }
 
 nav a:hover {
-    color: #0B3954;
+    color: #EEE5E9;
     font-size: 24px;
+}
+
+nav a:visited {
+    color: #EEE5E9;
 }
 
 /*Body
 --------------------------*/
 
-/* Work
+/* What We Do
 --------------------------*/
-.work {
-    background: #EEE5E8;
+.we_do {
+    background:linear-gradient(rgba(98, 182, 203, 1.0), rgba(95, 168, 211, 0.4)),
+                url() no-repeat fixed;
 }
 
 h3 ~ p {
@@ -195,20 +201,30 @@ h3 ~ p {
     margin: 5px;
 }
 
-.job-descrption p:first-of-type{
+.p:first-of-type{
     margin-top: 0;
 }
 
-/*Education
+/*Vision
 --------------------------*/
 
-.education {
-    background: linear-gradient(rgba(103, 113, 176, 0.8), rgba(125, 132, 178, 0.6)),
-                url(universidad-en-guadalajara.jpg) no-repeat fixed;
+.vision {
+    background: linear-gradient(rgba(95, 168, 211, 0.4), rgba(190, 233, 232, 0.8)),
+                url() no-repeat fixed;
     background-size: cover;
-    color: #EEE5E9;
+   /* color: #EEE5E9;*/
 }
 
-.education p:nth-child(4) {
+.vision p:nth-child(4) {
     margin-bottom: 0px;
+}
+
+
+/*Mission
+-------------------------*/
+
+.mission {
+    background: linear-gradient(rgba(190, 233, 232, 0.8), rgba(27, 73, 101, 1.0)), 
+                url() no-repeat fixed;
+    background-size: cover;
 }
