@@ -41,53 +41,42 @@ ul{
 }
 
 .content-wrap {
+    border: 0px;
     max-width: 1530px;
     min-width: 950px;
     margin: 0 auto;
-    padding: 150px;
     overflow: auto;
-    border: 0px; 
+    padding: 150px;     
 }
 
-.column-left{
-    width: 50%;
+.column-left {
+/*    border: 1px solid black; */
     float: left;
 /*    padding-top: px;*/
-/*    border: 1px solid black; */
-    
+    width: 50%;
 }
 
-.column-right{
+.column-right {
     width: 50%;
     float: right;
     padding-left: 0%;
-/*    min-height: 160px;*/
-/*    border: 1px solid black; */
 }
 
-.uppercase{
+.uppercase {
     text-transform: uppercase;
-}
-
-.button{
-    text-decoration: none;
-/*    background-color: red;
-    color: floralwhite; */
-    padding: 10px;
-    display:inline-block;
 }
 
 /* Header and Footer
 -------------------------------------*/
 
-header{
+header {
     background: #62B6CB;
     color: #EEE5E9;
     padding-top: 20px;
     position: relative;
 }
 
-footer{
+footer {
     background: #1B4965;
     color: #EEE5E9;
     text-align: center;
@@ -95,31 +84,31 @@ footer{
     padding-bottom: 20px;
 }
 
-header h1{
+header h1 {
+    /* color: #0B3954;*/
     font-weight: 700;
-   /* color: #0B3954;*/
 }
-header h2{
-    font-weight: 500;
+header h2 {
   /*  color:#0B3954;*/
+    font-weight: 500;
 }
 
-header p{
+header p {
     font-size: 24px;
 }
 
 footer h2 {
     margin: 20px;
 }
-footer p{
+footer p {
     margin: 15px;
 }
 
-footer a:link{
+footer a:link {
     color: #EEE5E9;
 }
 
-footer a:hover{
+footer a:hover {
     color: #CF5C36;
     text-decoration: none;
 }
@@ -128,15 +117,8 @@ footer a:visited {
     color: #CF5C36;
 }
 
-footer h4{
+footer h4 {
     font-weight: 200;
-}
-
-.profile-img { 
-    border-radius: 300px;    
-/*    float: left;*/
-/*    margin-right: 40px;*/
-    
 }
 
 .download {
@@ -165,15 +147,14 @@ nav {
 
 nav a {
     display: inline-block;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 22px;
-    
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;   
 }
 
-nav a:link{
+nav a:link {
     color: #EEE5E9;
 }
 
@@ -186,13 +167,14 @@ nav a:visited {
     color: #EEE5E9;
 }
 
-/*Body
---------------------------*/
+nav .signin {
+    float: right;
+}
 
 /* What We Do
 --------------------------*/
 .we_do {
-    background:linear-gradient(rgba(98, 182, 203, 1.0), rgba(95, 168, 211, 0.4)),
+    background:linear-gradient(rgba(98, 182, 203, 1.0), rgba(98, 182, 203, 0.4)),
                 url() no-repeat fixed;
 }
 
@@ -201,7 +183,7 @@ h3 ~ p {
     margin: 5px;
 }
 
-.p:first-of-type{
+.p:first-of-type {
     margin-top: 0;
 }
 
@@ -209,22 +191,36 @@ h3 ~ p {
 --------------------------*/
 
 .vision {
-    background: linear-gradient(rgba(95, 168, 211, 0.4), rgba(190, 233, 232, 0.8)),
+    background: linear-gradient(rgba(203, 233, 255, 1.0), rgba(203, 233, 255, 0.4)),
                 url() no-repeat fixed;
-    background-size: cover;
-   /* color: #EEE5E9;*/
 }
 
-.vision p:nth-child(4) {
-    margin-bottom: 0px;
+/*vision.html*/
+.we_also_do {
+    background:linear-gradient(rgba(98, 182, 203, 1.0), rgba(98, 182, 203, 0.4)),
+                url() no-repeat fixed;
 }
 
+.we_also_do_2 {
+    background: linear-gradient(rgba(203, 233, 255, 1.0), rgba(203, 233, 250, 0.4)),
+                url() no-repeat fixed;
+}
+
+.we_also_do_3 {
+    background: linear-gradient(rgba(190, 233, 232, 1.0), rgba(190, 233, 232, 0.4)),
+                url() no-repeat fixed;
+}
+
+.we_also_do_4 {
+
+    background: linear-gradient(rgba(95, 168, 211, 1.0), rgba(95, 168, 211, 0.4)), 
+                url() no-repeat fixed;                
+}
 
 /*Mission
 -------------------------*/
 
 .mission {
-    background: linear-gradient(rgba(190, 233, 232, 0.8), rgba(27, 73, 101, 1.0)), 
+    background: linear-gradient(rgba(95, 168, 211, 1.0), rgba(95, 168, 211, 0.4)), 
                 url() no-repeat fixed;
-    background-size: cover;
 }
