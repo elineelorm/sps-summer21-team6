@@ -1,3 +1,28 @@
+.overlays {
+    background-color: rgba(0,0,0,0.5);
+    bottom: 0;
+    cursor: pointer; 
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%; 
+    z-index: 2;
+}
+
+#text{
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .patient-title {
     padding-top: 3rem;
     text-align: center;

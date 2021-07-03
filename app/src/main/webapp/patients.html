@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <title>List of Patients</title>
     <link rel="stylesheet" href="style.css" >
-    <script src="script.js"></script>
+    <script src="patients.js"></script>
   </head>
   <body>
     <content>
@@ -15,54 +15,94 @@
             </span>
         </h2>
         <div class="patient-profiles"> 
-            <patient class="patient-profile profile">
-                <time datetime="2021-06-28" title="Joined on June 28, 2021">
-                    <strong> Joined </strong>
-                     on June 28, 2021 
-                </time>
-                <h3>
-                    Anna Banana
-                </h3>
-                <h5> 
-                    Age: 19
-                </h5>
-            </patient>
-            <patient class="patient-profile profile">
-                <time datetime="2021-06-28" title="Joined on June 28, 2021">
-                    <strong> Joined </strong>
-                     on June 28, 2021 
-                </time>
-                <h3>
-                    Jack Beach
-                </h3>
-                <h5> 
-                    Age: 24
-                </h5>
-            </patient>
-            <patient class="patient-profile profile">
-                <time datetime="2021-06-28" title="Joined on June 28, 2021">
-                    <strong> Joined </strong>
-                     on June 28, 2021 
-                </time>
-                <h3>
-                    Dawn Derry
-                </h3>
-                <h5> 
-                    Age: 18
-                </h5>
-            </patient>
-            <patient class="patient-profile profile">
-                <time datetime="2021-06-28" title="Joined on June 28, 2021">
-                    <strong> Joined </strong>
-                     on June 28, 2021 
-                </time>
-                <h3>
-                    Gina Jackson
-                </h3>
-                <h5> 
-                    Age: 15
-                </h5>
-            </patient>
+            <button onclick="on1()">
+                <patient class="patient-profile profile">
+                    <time datetime="2021-06-28" title="Joined on June 28, 2021">
+                        <strong> Joined </strong>
+                        on June 28, 2021 
+                    </time>
+                    <h3>
+                        Anna Banana
+                    </h3>
+                    <h5> 
+                        Age: 19
+                    </h5>
+                </patient>
+            </button>
+            <div class="overlays "id="overlay1" onclick="off1()">
+                <div id="text">
+                    <h1>Anna Banana</h1>
+                    <p>Age: 19</p>
+                    <p>May have: Depression</p>
+                    <p><button> Add Patient </button></p>
+                </div>
+            </div>
+            <button onclick="on2()">
+                <patient class="patient-profile profile">
+                    <time datetime="2021-06-28" title="Joined on June 28, 2021">
+                        <strong> Joined </strong>
+                        on June 28, 2021 
+                    </time>
+                    <h3>
+                        Jack Beach
+                    </h3>
+                    <h5> 
+                        Age: 24
+                    </h5>
+                </patient>
+            </button>
+            <div class="overlays" id="overlay2" onclick="off2()">
+                <div id="text">
+                    <h1>Jack Beach</h1>
+                    <p>Age: 24</p>
+                    <p>May have: Anxiety</p>
+                    <p><button> Add Patient </button></p>
+                </div>
+            </div> 
+            <button onclick="on3()">
+                <patient class="patient-profile profile">
+                    <time datetime="2021-06-28" title="Joined on June 28, 2021">
+                        <strong> Joined </strong>
+                        on June 28, 2021 
+                    </time>
+                    <h3>
+                        Dawn Derry
+                    </h3>
+                    <h5> 
+                        Age: 18
+                    </h5>
+                </patient>
+            </button>
+            <div class="overlays" id="overlay3" onclick="off3()">
+                <div id="text">
+                    <h1>Dawn Derry</h1>
+                    <p>Age: 18</p>
+                    <p>May have: Bipolar disorder </p>
+                    <p><button> Add Patient </button></p>
+                </div>
+            </div>  
+            <button onclick="on4()">
+                <patient class="patient-profile profile">
+                    <time datetime="2021-06-28" title="Joined on June 28, 2021">
+                        <strong> Joined </strong>
+                        on June 28, 2021 
+                    </time>
+                    <h3>
+                        Gina Jackson
+                    </h3>
+                    <h5> 
+                        Age: 15
+                    </h5>
+                </patient>
+            </button>
+            <div class="overlays" id="overlay4" onclick="off4()">
+                <div id="text">
+                    <h1>Gina Jackson</h1>
+                    <p>Age: 15</p>
+                    <p>May have: Anorexia</p>
+                    <p><button> Add Patient </button></p>
+                </div>
+            </div>
         </div>
     </content>
   </body>
