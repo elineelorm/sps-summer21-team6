@@ -1,9 +1,236 @@
+
+/*Global Styles
+------------------------------*/
+body {
+    font-family: 'Open Sans Condensed Light',sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 35px;
+    color: #BEE9E8;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    margin: 0;
+}
+
+h4{
+    font-size:22px;
+}
+
+h2, p {
+    margin: 0px;
+}
+
+p{
+    font-size: 22px;
+}
+ul{
+    font-size: 22px;
+}
+
+.content-wrap {
+    border: 0px;
+    max-width: 1530px;
+    min-width: 950px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 150px;     
+}
+
+.column-left {
+/*    border: 1px solid black; */
+    float: left;
+/*    padding-top: px;*/
+    width: 50%;
+}
+
+.column-right {
+    width: 50%;
+    float: right;
+    padding-left: 0%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Header and Footer
+-------------------------------------*/
+
+header {
+    background: #62B6CB;
+    color: #EEE5E9;
+    padding-top: 20px;
+    position: relative;
+}
+
+footer {
+    background: #1B4965;
+    color: #EEE5E9;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-weight: 700;
+}
+header h2 {
+    font-weight: 500;
+}
+
+header p {
+    font-size: 24px;
+}
+
+footer h2 {
+    margin: 20px;
+}
+footer p {
+    margin: 15px;
+}
+
+footer a:link {
+    color: #EEE5E9;
+}
+
+footer a:hover {
+    color: #CF5C36;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #CF5C36;
+}
+
+footer h4 {
+    font-weight: 200;
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.contact-info a {
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Navigation
+-------------------------------------*/
+
+
+nav {
+    text-align: center;
+    background: #62B6CB;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+nav a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;   
+}
+
+nav a:link {
+    color: #EEE5E9;
+}
+
+nav a:hover {
+    color: #EEE5E9;
+    font-size: 24px;
+}
+
+nav a:visited {
+    color: #EEE5E9;
+}
+
+nav .signin {
+    float: right;
+}
+
+/* What We Do
+--------------------------*/
+.we_do {
+    background:linear-gradient(rgba(98, 182, 203, 1.0), rgba(98, 182, 203, 0.4)),
+                url() no-repeat fixed;
+}
+
+h3 ~ p {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.p:first-of-type {
+    margin-top: 0;
+}
+
+/*Vision
+--------------------------*/
+
+.vision {
+    background: linear-gradient(rgba(203, 233, 255, 1.0), rgba(203, 233, 255, 0.4)),
+                url() no-repeat fixed;
+}
+
+/*vision.html*/
+.we_also_do {
+    background:linear-gradient(rgba(98, 182, 203, 1.0), rgba(98, 182, 203, 0.4)),
+                url() no-repeat fixed;
+}
+
+.we_also_do_2 {
+    background: linear-gradient(rgba(203, 233, 255, 1.0), rgba(203, 233, 250, 0.4)),
+                url() no-repeat fixed;
+}
+
+.we_also_do_3 {
+    background: linear-gradient(rgba(190, 233, 232, 1.0), rgba(190, 233, 232, 0.4)),
+                url() no-repeat fixed;
+}
+
+.we_also_do_4 {
+
+    background: linear-gradient(rgba(95, 168, 211, 1.0), rgba(95, 168, 211, 0.4)), 
+                url() no-repeat fixed;                
+}
+
+/*Mission
+-------------------------*/
+
+.mission {
+    background: linear-gradient(rgba(95, 168, 211, 1.0), rgba(95, 168, 211, 0.4)), 
+                url() no-repeat fixed;
+    background-size: cover;
+}
+
 .patient-title {
     padding-top: 3rem;
     text-align: center;
 }
 
-patient.content {
+.patient-content {
     background: #fff;
     border-radius: 8px;
     color: #000;
@@ -25,6 +252,6 @@ patient.content {
     grid-template-columns: 1fr 1fr;
 }
 
-patient {
+.patient {
     display: block;
 }
