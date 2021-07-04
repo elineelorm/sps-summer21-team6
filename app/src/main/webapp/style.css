@@ -36,6 +36,7 @@ h2, p {
 p{
     font-size: 22px;
 }
+
 ul{
     font-size: 22px;
 }
@@ -231,6 +232,7 @@ h3 ~ p {
     padding-top: 3rem;
     text-align: center;
 }
+
 patient.content {
     background: #fff;
     border-radius: 8px;
@@ -239,44 +241,43 @@ patient.content {
     overflow-wrap: break-word;
     padding: 4rem;
 }
+
 .patient-profile {
     border: 1px solid #eaeaea;
     border-radius: 8px;
     box-shadow: 0 0.5rem 1.2rem rgb(0 0 0 / 20%);
+    cursor: pointer;
+    font: 400 13.3333px Arial;    
     padding: .75rem 1.25rem;
+    text-align: center;
 }
+
 .patient-profiles {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
+    padding: 1.2rem;
 }
+
 patient {
     display: block;
 }
 
-/*Overlays
+/*List Content
 ----------------------*/
-.overlays {
-    background-color: rgba(0,0,0,0.5);
-    bottom: 0;
-    cursor: pointer; 
-    display: none;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%; 
-    z-index: 2;
+
+.closebtn {
+    color: rgb(3, 3, 3);
+    cursor: pointer;
+    float: right;
+    font-size: 35px;
 }
 
-#text{
-    align-items: center;
+.containerTab {
+    background-color: #62B6CB;    
     color: white;
+    font: Arial;   
     font-size: 50px;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    padding: 20px;
+    text-align: center;
 }
