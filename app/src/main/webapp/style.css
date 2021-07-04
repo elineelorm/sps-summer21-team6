@@ -1,10 +1,9 @@
-
 /*Global Styles
 ------------------------------*/
 body {
-    font-family: 'Open Sans Condensed Light',sans-serif;
+    font-family: 'Open Sans Condensed Light' sans-serif;
     margin: 0;
-}
+} 
 
 h1, h2 {
     font-weight: 200;
@@ -37,6 +36,7 @@ h2, p {
 p{
     font-size: 22px;
 }
+
 ul{
     font-size: 22px;
 }
@@ -225,12 +225,15 @@ h3 ~ p {
     background-size: cover;
 }
 
+/*Patient List
+------------------------*/
+
 .patient-title {
     padding-top: 3rem;
     text-align: center;
 }
 
-.patient-content {
+patient.content {
     background: #fff;
     border-radius: 8px;
     color: #000;
@@ -243,15 +246,38 @@ h3 ~ p {
     border: 1px solid #eaeaea;
     border-radius: 8px;
     box-shadow: 0 0.5rem 1.2rem rgb(0 0 0 / 20%);
+    cursor: pointer;
+    font: 400 13.3333px Arial;    
     padding: .75rem 1.25rem;
+    text-align: center;
 }
 
 .patient-profiles {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
+    padding: 1.2rem;
 }
 
-.patient {
+patient {
     display: block;
+}
+
+/*List Content
+----------------------*/
+
+.closebtn {
+    color: rgb(3, 3, 3);
+    cursor: pointer;
+    float: right;
+    font-size: 35px;
+}
+
+.containerTab {
+    background-color: #62B6CB;    
+    color: white;
+    font: Arial;   
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
 }
