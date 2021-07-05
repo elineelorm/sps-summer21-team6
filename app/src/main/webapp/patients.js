@@ -3,10 +3,10 @@
  * @param {*} tabName 
  */
 function openTab(tabName) {
-  var i, x;
-  x = document.getElementsByClassName("containerTab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  var i, container;
+  container = document.getElementsByClassName("containerTab");
+  for (i = 0; i < container.length; i++) {
+    container[i].style.display = "none";
   }
   document.getElementById(tabName).style.display = "block";
 }
