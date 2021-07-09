@@ -186,15 +186,8 @@ h3 ~ p {
     margin-top: 0;
 }
 
-/*Vision
---------------------------*/
+/*we_do.html*/
 
-.vision {
-    background: linear-gradient(rgba(203, 233, 255, 1.0), rgba(203, 233, 255, 0.4)),
-                url() no-repeat fixed;
-}
-
-/*vision.html*/
 .we_also_do {
     background:linear-gradient(rgba(98, 182, 203, 1.0), rgba(98, 182, 203, 0.4)),
                 url() no-repeat fixed;
@@ -216,13 +209,41 @@ h3 ~ p {
                 url() no-repeat fixed;                
 }
 
+
+/*Vision
+--------------------------*/
+.vision {
+    background: linear-gradient(rgba(203, 233, 255, 1.0), rgba(203, 233, 255, 0.4)),
+                url() no-repeat fixed;
+}
+
+/*vision.html*/
+
+.emotional-maturity {
+    background: linear-gradient(rgba(27, 73, 101, 0.4), rgba(27, 73, 101, 1.0));
+}
+
+.health-rights {
+    background: linear-gradient(rgba(98, 182, 203, 1.0), rgba(27, 73, 101, 0.4));
+}
+
+
 /*Mission
 -------------------------*/
-
 .mission {
     background: linear-gradient(rgba(95, 168, 211, 1.0), rgba(95, 168, 211, 0.4)), 
                 url() no-repeat fixed;
     background-size: cover;
+}
+
+/*mission.html*/
+
+.look-for-help {
+    background: linear-gradient(rgba(98, 182, 203, 1.0), rgba(27, 73, 101, 0.4));
+}
+
+.open-your-heart {
+    background: linear-gradient(rgba(27, 73, 101, 0.4), rgba(27, 73, 101, 1.0));
 }
 
 /*Patient List
@@ -233,7 +254,7 @@ h3 ~ p {
     text-align: center;
 }
 
-patient.content {
+.patient.content {
     background: #fff;
     border-radius: 8px;
     color: #000;
