@@ -281,3 +281,70 @@ patient {
     padding: 20px;
     text-align: center;
 }
+
+/*List Content
+----------------------*/
+* {
+    box-sizing: border-box;
+}
+
+#v_regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    min-width: 300px;
+    padding: 40px;
+    width: 70%;
+}
+
+ .tab input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #aaaaaa;
+}
+
+.tab input.invalid {
+    background-color: #ffdddd;
+}
+
+.tab {
+    display: none;
+}
+
+button {
+    background-color: #1B4965;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+}
+
+.step {
+    background-color: #BEE9E8;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    height: 15px;
+    margin: 0 2px;
+    opacity: 0.5;
+    width: 15px;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: #62B6CB;
+}
