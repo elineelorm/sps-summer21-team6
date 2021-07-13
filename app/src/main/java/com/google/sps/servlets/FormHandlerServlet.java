@@ -22,11 +22,11 @@ public class FormHandlerServlet extends HttpServlet {
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
     
-    String firstName = request.getParameter("firstName"); 
-    String lastName = request.getParameter("lastName");
-    String email = request.getParameter("email");
-    String experience = request.getParameter("experience");
-    String reference = request.getParameter("reference"); 
+    String firstName = Jsoup.clean(request.getParameter("firstName"), Whitelist.none()); 
+    String lastName = Jsoup.clean(request.getParameter("lastName"), Whitelist.none());
+    String email = Jsoup.clean(request.getParameter("email"), Whitelist.none());
+    String experience = Jsoup.clean(request.getParameter("experience"), Whitelist.none());
+    String reference = Jsoup.clean(request.getParameter("reference"), Whitelist.none()); 
 
     writeToDatastore(firstName, lastName, email, experience, reference);
 
