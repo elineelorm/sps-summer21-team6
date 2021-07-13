@@ -5,21 +5,30 @@ public final class Volunteer {
     private final String firstName;
     private final String lastName;
     private final String email;
-    private final String phone;
-    private final String birthday;
-    private final String degree;
     private final String experience;
     private final String reference;
+    private final String id;
 
 
-    public Volunteer(String firstName, String lastName, String email, String phone, String birthday, String degree, String experience, String reference) {
+    public Volunteer(String firstName, String lastName, String email, String experience, String reference) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.phone = phone;
-        this.birthday = birthday;
-        this.degree = degree;
         this.experience = experience;
         this.reference = reference;
+        this.id = firstName + lastName;
+    }
+
+    public Volunteer(){
+        this.firstName = "n/a";
+        this.lastName = "n/a";
+        this.email = "n/a";
+        this.experience = "n/a";
+        this.reference = "n/a";
+        this.id = "n/a";
+    }
+
+    public String getId(){
+        return this.id;
     }
 }
