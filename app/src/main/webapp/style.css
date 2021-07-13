@@ -280,7 +280,7 @@ h3 ~ p {
     padding: 1.2rem;
 }
 
-patient {
+.patient {
     display: block;
 }
 
@@ -301,4 +301,57 @@ patient {
     font-size: 50px;
     padding: 20px;
     text-align: center;
+}
+
+
+/* Sign In or Log In
+-----------------------*/
+
+.VerCenter {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh);
+    justify-content: center;
+    background-color: #BEE9E8;
+}
+
+.login {
+    background-color: #62B6CB;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 80px;
+    width:30%;
+}
+
+.login h2, .login p {
+    color: #EEE5E9;
+    text-align: center;
+}
+
+.LogMail, .LogPass {
+    display: block;
+    margin: 50px auto;
+    width: max-content;
+}
+
+.LoginButton button, .LoginButton a {
+    background-color: #1B4965;
+    border: none;
+    border-radius: 20px;
+    color: #EEE5E9;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.LoginButton {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.g_id_signin {
+    padding-top: 20px;
 }
