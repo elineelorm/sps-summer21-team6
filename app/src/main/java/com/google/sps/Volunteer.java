@@ -19,13 +19,13 @@ public final class Volunteer {
         this.id = firstName + lastName;
     }
 
-    public Volunteer(){
-        this.firstName = "n/a";
-        this.lastName = "n/a";
-        this.email = "n/a";
-        this.experience = "n/a";
-        this.reference = "n/a";
-        this.id = "n/a";
+    public Volunteer() {
+        this.firstName = "";
+        this.lastName = "";
+        this.email = "";
+        this.experience = "";
+        this.reference = "";
+        this.id = "";
     }
 
     public String getId(){

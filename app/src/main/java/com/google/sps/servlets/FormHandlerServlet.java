@@ -40,6 +40,7 @@ public class FormHandlerServlet extends HttpServlet {
     KeyFactory keyFactory = datastore.newKeyFactory().setKind("Volunteer");
     FullEntity textEntity =
         Entity.newBuilder(keyFactory.newKey())
+            .set("id", firstName + lastName + Math.random()* firstName.length())
             .set("firstName", firstName)
             .set("lastName", lastName)
             .set("email", email)

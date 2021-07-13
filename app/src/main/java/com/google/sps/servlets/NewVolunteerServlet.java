@@ -36,7 +36,7 @@ public class NewVolunteerServlet extends HttpServlet {
 
     List<Volunteer> volunteers = new ArrayList<>();
     if (results == null){
-        Volunteer volunteer = new Volunteer("n/a", "n/a", "n/a", "n/a", "n/a");
+        Volunteer volunteer = new Volunteer();
         volunteers.add(volunteer);
     }
     while (results.hasNext()) {
