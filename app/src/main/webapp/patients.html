@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="style.css" >
     <script src="patients.js"></script>
   </head>
-  <body>
+  <body onload="addPatients()">
+    <header id="briefing">
+        <nav>
+            <a href="index.html">Welcome</a>
+            <a href="we_do.html">What We Do</a>
+            <a href="vision.html">Our Vision</a>
+            <a href="mission.html">Our Mission</a>
+        </nav>
+    </header>
+
     <content>
 
         <h2 class="patient-title" id="list-heading">
@@ -16,6 +25,13 @@
             </span>
         </h2>
         <div class="patient-profiles"> 
+ 
+            <!--Test using server-->
+            <div onclick="openTab('b1')">
+                <patient class="patient-profile profile" id="json_to_html">
+                </patient>
+            </div>
+
             <div onclick="openTab('b1')">
                 <patient class="patient-profile profile">
                     <time datetime="2021-06-28" title="Joined on June 28, 2021">
@@ -103,8 +119,57 @@
                 <p>May have: Anorexia</p>
                 <p><button> Add Patient </button></p>
             </div>
+
+            <div onclick="openTab('b5')">
+                <patient class="patient-profile profile">
+                    <time datetime="2021-06-28" title="Joined on June 28, 2021">
+                        <strong> Joined </strong>
+                        on June 28, 2021 
+                    </time>
+                    <h3>
+                        Sarah Fier
+                    </h3>
+                    <h5> 
+                        Age: 24
+                    </h5>
+                </patient>
+            </div>
+            <div id="b5" class="containerTab" style="display: none;">
+                <span onclick="this.parentElement.style.display='none'" class=closebtn>x</span>
+                <h1>Sarah Fier</h1>
+                <p>Age: 24</p>
+                <p>May have: Anxiety</p>
+                <p><button> Add Patient </button></p>
+            </div> 
+
+            <div onclick="openTab('b6')">
+                <patient class="patient-profile profile">
+                    <time datetime="2021-06-28" title="Joined on June 28, 2021">
+                        <strong> Joined </strong>
+                        on June 28, 2021 
+                    </time>
+                    <h3>
+                        John Rivers
+                    </h3>
+                    <h5> 
+                        Age: 24
+                    </h5>
+                </patient>
+            </div>
+            <div id="b6" class="containerTab" style="display: none;">
+                <span onclick="this.parentElement.style.display='none'" class=closebtn>x</span>
+                <h1>John Rivers</h1>
+                <p>Age: 24</p>
+                <p>May have: Anxiety</p>
+                <p><button> Add Patient </button></p>
+            </div>             
         </div>
 
     </content>
+
+    <footer id="links">
+            <p>Copyright 2021</p>
+            <p><h5>**Patients are all made up due to the sensitive nature of the topics**</h5></p>
+    </footer>
   </body>
 </html>

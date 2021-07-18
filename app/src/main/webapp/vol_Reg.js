@@ -54,12 +54,3 @@ function fixStepIndicator(n) {
     }
     step[n].className += " active";
 }
-
-function showPassword() {
-    var password = document.getElementById("myInput");
-    if (password.type === "password") {
-        password.type = "text";
-    } else {
-        password.type = "password";
-  }
-}
