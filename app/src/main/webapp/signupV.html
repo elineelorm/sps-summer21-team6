@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header id="navigator">
+    <header id="navigator"> 
         <nav>
             <a href="index.html">Welcome</a>
             <a href="we_do.html">What We Do</a>
@@ -17,10 +17,62 @@
             <a href="mission.html">Our Mission</a>
             <a href="signin.html" class="signin">Sign in</a>
         </nav>
-    </header>>
+    </header>
     
     <main>
+        <div class="content-wrap">
+            <div class="container">
+                <form action="/action_page.php">
+                    <h2 style="text-align:center">Sign Up with Google</h2><br>
+                    <div id="g_id_onload"
+                        data-client_id="161259580905-l83od79hp7urt7ur78u49jd8vsq73d4b.apps.googleusercontent.com"
+                        data-login_uri="https://your.domain/your_login_endpoint"
+                        data-auto_prompt="false">
+                    </div>
+                    <div class="g_id_signin"
+                        data-type="standard"
+                        data-size="large"
+                        data-width="50px"
+                        data-theme="outline"
+                        data-text="sign_in_with"
+                        data-shape="rectangular"
+                        data-logo_alignment="right">
+                    </div>
+                    
+                    <br>
 
+                    <h2 style="text-align:center">Sign Up Manually</h2>
+                    <h3> General info</h3>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                    <label for="mname">Middle Name (if applicable) </label><br>
+                    <input type="text" name="mname" id="mname" placeholder="Middle Name">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" name="lname" id="lanem" placeholder="Last Name" required>
+                    <label for="birthday">Birthday</label><br>
+                    <input type="date" name="birthday" id="birthday" required> 
+                    
+                    <p> Sex </p>
+                    <input type="radio" name="sex" id="female" value="Female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="sex" id="male" value="Male" required>
+                    <label for="female">Male</label>
+                    <input type="radio" name="sex" id="other" value="Other" required>
+                    <label for="female">Other</label><br><br>
+                    
+                    <h3>Security and Identification</h3>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    <label for="username">Username</label><br>
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <label for="confirm">Confirm Password</label><br><br>
+                    <input type="password" name="confirm" id="confirm" placeholder="Password" required>
+                    <input type="submit" value="Let's get started">
+                </form>
+            </div>
+        </div>
     </main>
     
     <footer>
