@@ -263,7 +263,7 @@ h3 ~ p {
     padding: 4rem;
 }
 
-.patient-profile {
+.patient-profiles #profile {
     border: 1px solid #eaeaea;
     border-radius: 8px;
     box-shadow: 0 0.5rem 1.2rem rgb(0 0 0 / 20%);
@@ -309,7 +309,7 @@ h3 ~ p {
 * {box-sizing: border-box}
 
 /* style the container */
-.container {
+.content-wrap .container {
   position: relative;
   border-radius: 5px;
   background-color: #BEE9E8;
@@ -432,11 +432,10 @@ make the two columns stack on top of each other instead of next to each other */
 
 .g_id_signin {
     padding-top: 20px;
+}
 
-
-/*List Content
+/* Volunteer List Content
 ----------------------*/
-* {box-sizing: border-box}
 
 #v_regForm {
     background-color: #ffffff;
@@ -497,4 +496,59 @@ make the two columns stack on top of each other instead of next to each other */
 
 .step.finish {
     background-color: #62B6CB;
+}
+
+/* My Profile List Content
+----------------------*/
+#myProfile a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#myProfile a:hover {
+  left: 0;
+}
+
+#myPatientList {
+  top: 50px;
+  background-color: #CAE9FF;
+}
+
+#myProfileText {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+#myProfileOverlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(36, 35, 35, 0.5);
+  z-index: 5;
+  cursor: pointer;
+}
+
+#myProfileText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
 }

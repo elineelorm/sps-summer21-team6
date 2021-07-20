@@ -18,22 +18,40 @@ async function addPatients(){
     console.log(textFromResponse);
     console.log("hi");
 
-    var json_to_html_tag = document.getElementById("json_to_html");
+    var json_to_html_tag = document.getElementsByClassName("patient-profile profile");
+    for (i = 0; i < json_to_html_tag.length; i++) {
+        var my_json = JSON.stringify(textFromResponse[i]);
+        var patient = JSON.parse(my_json);
 
-    for (let i = 0; i < textFromResponse.length; i++){
-            var my_json = JSON.stringify(textFromResponse[i]);
-            var parsed_obj = JSON.parse(my_json);
-            
-            console.log(textFromResponse[i]);
+        console.log(patient);
 
-            const element = document.createElement('li');
-            element.innerText = textFromResponse[i];
-
-            console.log(element);
-
-            json_to_html_tag.innerHTML =  "New Patient <br><br>" + 
-                                "Name: " + element.name + 
-                                "<br>Age: " + element.age +
-                                "<br>May have: " + element.symptoms;
+        json_to_html_tag[i].appendChild(createPatient(patient));
     }
+
+}
+
+function createPatient(patient) {
+    let patientDiv = document.createElement('div');
+    
+    let nameDiv = document.createElement('div');
+    patientDiv.appendChild(nameDiv);
+    nameDiv.textContent = "Name: " + patient.name;
+    
+    let ageDiv = document.createElement('div');
+    patientDiv.appendChild(ageDiv);
+    ageDiv.textContent = "Age: " + patient.age;
+    
+    let symptomsDiv = document.createElement('div');
+    patientDiv.appendChild(symptomsDiv);
+    symptomsDiv.textContent = "May have: " + patient.symptoms;
+    
+    return patientDiv;
+}
+
+function on() {
+  document.getElementById("myProfileOverlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("myProfileOverlay").style.display = "none";
 }

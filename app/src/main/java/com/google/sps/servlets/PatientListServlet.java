@@ -34,27 +34,8 @@ public final class PatientListServlet extends HttpServlet {
         this.PATIENTS.add(p5);
         this.PATIENTS.add(p6);
 
-        ArrayList<String> json = convertToJson(this.PATIENTS);
-
+        final Gson gson = new Gson();
         response.setContentType("application/json");
-        response.getWriter().println(json);
+        response.getWriter().println(gson.toJson(PATIENTS));
     }
-
-    private ArrayList<String> convertToJson(ArrayList<Patient> PATIENTS) {
-        ArrayList<String> json = new ArrayList();
-
-        for (Patient p : PATIENTS) {
-            HashMap patient = new HashMap();
-            patient.put("name", p.getName());
-            patient.put("age", p.getAge());
-            patient.put("symptoms", p.getSymptoms());
-            String json1 = "[";
-            json1 += "\"" + patient + "\"";
-            json1 += "]";
-            json.add(json1);
-        }
-
-        return json;
-    }
-
 }
